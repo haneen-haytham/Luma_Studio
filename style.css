@@ -372,12 +372,18 @@ body {
         padding: 16px 20px;
     }
 
+    @media (max-width: 480px) {
     .hero-buttons {
         display: flex;
-        flex-direction: column; 
+        justify-content: center;
+        flex-wrap: wrap; 
         gap: 12px; 
-        max-width: 300px;
     }
+
+    .hero-buttons .btn-secondary {
+        margin-left: 0; 
+    }
+}
 
 
     .main-heading {
