@@ -376,17 +376,8 @@ body {
         display: flex;
         flex-direction: column; 
         gap: 12px; 
-        width: 100%;
-        max-width: 300px; 
-        margin: 0 auto; 
     }
 
-    .hero-buttons .btn-primary,
-    .hero-buttons .btn-secondary {
-        display: block;
-        width: 100%;
-        margin-left: 0 !important; 
-        text-align: center; 
 
     .main-heading {
         font-size: 32px;
