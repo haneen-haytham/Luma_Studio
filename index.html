@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma Studio | Photos worth remembering</title>
+    <meta name="description" content="Thoughtfully crafted photography sessions designed around your story, your style, and your moment.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="Luma Studio Home">Luma Studio</a>
+            
+            <nav class="navbar" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#book" class="btn-primary">Book a session</a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+        <ul class="mobile-nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#book" class="btn-primary mobile-book-btn">Book a session</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-container">
+                
+                <div class="hero-content">
+                    <h1 id="hero-title" class="main-heading">Photos worth<br>remembering.</h1>
+                    <p class="hero-description">
+                        Thoughtfully crafted photography sessions designed around your story, your style, and your moment.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#book" class="btn-primary">Book a session</a>
+                        <a href="#portfolio" class="btn-secondary">View our work</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="image-wrapper">
+                        <img src="images/Golden Hour Muse.jfif" alt="Birds flying in the golden hour sky" class="hero-img">
+                        
+                        <!-- <div class="floating-card">
+                            <p class="card-title">Golden hour</p>
+                            <p class="card-subtitle">Riverside Park</p>
+                            <p class="card-details">Portrait session, shot on location.</p>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="trust-item">
+                    <span class="trust-number">500+</span>
+                    <span class="trust-label">Sessions photographed</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">4.9/5</span>
+                    <span class="trust-label">Client rating</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">7 days</span>
+                    <span class="trust-label">Average delivery</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">Studio + Outdoor</span>
+                    <span class="trust-label">Flexible locations</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="section-container">
+                <div class="section-heading">
+                    <h2 id="portfolio-title">A glimpse into the work.</h2>
+                    <p>Every session is shaped around the person, the moment, and the story behind it.</p>
+                </div>
+
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait</button>
+                    <button class="filter-btn" data-filter="graduation">Graduation</button>
+                    <button class="filter-btn" data-filter="couples">Couples</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <button class="portfolio-item item-1" data-cat="portrait" data-project="0">
+                        <img src="images/golden_hour.jfif" alt="Golden hour portraits">
+                        <span class="portfolio-overlay">
+                            <span class="portfolio-title">Golden hour portraits</span>
+                            <span class="portfolio-view">View session →</span>
+                        </span>
+                    </button>
+                    <button class="portfolio-item item-2" data-cat="couples" data-project="2">
+                        <img src="images/couple.jpg" alt="Nour and Youssef">
+                        <span class="portfolio-overlay">
+                            <span class="portfolio-title">Nour &amp; Youssef</span>
+                            <span class="portfolio-view">View session →</span>
+                        </span>
+                    </button>
+                    <button class="portfolio-item item-3" data-cat="graduation" data-project="1">
+                        <img src="images/grad1.jpg" alt="Class of 2026">
+                        <span class="portfolio-overlay">
+                            <span class="portfolio-title">Class of 2026</span>
+                            <span class="portfolio-view">View session →</span>
+                        </span>
+                    </button>
+                    <button class="portfolio-item item-4" data-cat="branding" data-project="3">
+                        <img src="images/founder.jfif" alt="The founder's portrait">
+                        <span class="portfolio-overlay">
+                            <span class="portfolio-title">The founder's portrait</span>
+                            <span class="portfolio-view">View session →</span>
+                        </span>
+                    </button>
+                    <button class="portfolio-item item-5" data-cat="portrait" data-project="4">
+                        <img src="images/morning2.jpg" alt="Quiet mornings">
+                        <span class="portfolio-overlay">
+                            <span class="portfolio-title">Quiet mornings</span>
+                            <span class="portfolio-view">View session →</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services" aria-labelledby="services-title">
+            <div class="section-container">
+                <div class="section-heading">
+                    <h2 id="services-title">Made for your moment.</h2>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-media">
+                        <img src="images/portrait1.jpg" alt="Portrait session example">
+                    </div>
+                    <div class="service-copy">
+                        <h3>Portraits</h3>
+                        <p>Natural, expressive portraits that feel like you.</p>
+                        <a href="#book" class="service-link">Explore session →</a>
+                    </div>
+                </div>
+
+                <div class="service-row reverse">
+                    <div class="service-media">
+                        <img src="images/grad2.jpg" alt="Graduation session example">
+                    </div>
+                    <div class="service-copy">
+                        <h3>Graduation</h3>
+                        <p>A thoughtful way to celebrate everything you worked for.</p>
+                        <a href="#book" class="service-link">Explore session →</a>
+                    </div>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-media">
+                        <img src="images/Couple1.jpg" alt="Couples session example">
+                    </div>
+                    <div class="service-copy">
+                        <h3>Couples</h3>
+                        <p>Honest, relaxed photographs that capture your connection.</p>
+                        <a href="#book" class="service-link">Explore session →</a>
+                    </div>
+                </div>
+
+                <div class="service-row reverse">
+                    <div class="service-media">
+                        <img src="images/branding.jpg" alt="Personal branding session example">
+                    </div>
+                    <div class="service-copy">
+                        <h3>Personal branding</h3>
+                        <p>Images that make your work and personality impossible to overlook.</p>
+                        <a href="#book" class="service-link">Explore session →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-section" id="about" aria-labelledby="why-title">
+            <div class="section-container">
+                <div class="section-heading">
+                    <h2 id="why-title">Why choose Luma?</h2>
+                </div>
+                <div class="why-container">
+                    <div class="why-media">
+                        <img src="images/why_luma.jfif" alt="Behind the scenes at a Luma session">
+                    </div>
+                    <div class="why-list">
+                        <div class="why-item">
+                            <span class="why-num">01</span>
+                            <div>
+                                <h4>Natural direction</h4>
+                                <p>We guide you without making you feel posed.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <span class="why-num">02</span>
+                            <div>
+                                <h4>Personalized sessions</h4>
+                                <p>Your session is built around your style, not a fixed formula.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <span class="why-num">03</span>
+                            <div>
+                                <h4>Thoughtful editing</h4>
+                                <p>Clean, natural editing that keeps the moment feeling like you.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <span class="why-num">04</span>
+                            <div>
+                                <h4>Fast delivery</h4>
+                                <p>Your final gallery arrives within seven days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="moment-section">
+            <div class="moment-copy">
+                <h2>Your story deserves more than a camera roll.</h2>
+            </div>
+            <div class="moment-media">
+                <img src="https://picsum.photos/seed/luma-moment/1200/1400" alt="Editorial photography moment">
+            </div>
+        </section> -->
+
+        <section class="process-section" aria-labelledby="process-title">
+            <div class="section-container">
+                <div class="section-heading">
+                    <h2 id="process-title">From first message to final gallery.</h2>
+                </div>
+                <div class="process-grid">
+                    <div class="process-item">
+                        <span class="process-num">01</span>
+                        <h4>Tell us your idea</h4>
+                        <p>Share what you're imagining and what the session means to you.</p>
+                    </div>
+                    <div class="process-item">
+                        <span class="process-num">02</span>
+                        <h4>We plan the details</h4>
+                        <p>We help with location, timing, outfits, and overall direction.</p>
+                    </div>
+                    <div class="process-item">
+                        <span class="process-num">03</span>
+                        <h4>You enjoy the moment</h4>
+                        <p>Relax, have fun, and let us handle the photographs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" aria-labelledby="testimonials-title">
+            <div class="section-container">
+                <div class="section-heading">
+                    <h2 id="testimonials-title">Kind words from people we've photographed.</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <blockquote>"I've never liked being photographed, but somehow I forgot the camera was even there halfway through."</blockquote>
+                        <p class="testimonial-attr"><strong>Mariam K.</strong><br>Personal branding session</p>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>"They picked the location before we even knew what to ask for, and it ended up being exactly right for us."</blockquote>
+                        <p class="testimonial-attr"><strong>Youssef &amp; Nour</strong><br>Couples session</p>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>"My gallery showed up in five days, and the photos looked like me on a really good day — not overly edited."</blockquote>
+                        <p class="testimonial-attr"><strong>Salma R.</strong><br>Graduation session</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section" aria-labelledby="pricing-title">
+            <div class="section-container">
+                <div class="section-heading center">
+                    <h2 id="pricing-title">Choose your session.</h2>
+                </div>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3>Essential</h3>
+                        <p class="price-dek">For simple, meaningful portraits.</p>
+                        <p class="price-amount">$120 <span>starting at</span></p>
+                        <ul>
+                            <li>45-minute session</li>
+                            <li>1 location</li>
+                            <li>15 edited images</li>
+                            <li>Online gallery</li>
+                        </ul>
+                        <a href="#book" class="btn-secondary full-width">Choose Essential</a>
+                    </div>
+                    <div class="price-card featured">
+                        <span class="price-tag">Most booked</span>
+                        <h3>Signature</h3>
+                        <p class="price-dek">For a more complete experience.</p>
+                        <p class="price-amount">$220 <span>starting at</span></p>
+                        <ul>
+                            <li>90-minute session</li>
+                            <li>Up to 2 locations</li>
+                            <li>35 edited images</li>
+                            <li>Outfit guidance</li>
+                            <li>Online gallery</li>
+                        </ul>
+                        <a href="#book" class="btn-primary full-width">Choose Signature</a>
+                    </div>
+                    <div class="price-card">
+                        <h3>Premium</h3>
+                        <p class="price-dek">For a fully personalized session.</p>
+                        <p class="price-amount">$350 <span>starting at</span></p>
+                        <ul>
+                            <li>2-hour session</li>
+                            <li>Multiple locations</li>
+                            <li>60+ edited images</li>
+                            <li>Outfit + location guidance</li>
+                            <li>Priority delivery</li>
+                        </ul>
+                        <a href="#book" class="btn-secondary full-width">Choose Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+            <div class="section-container">
+                <div class="section-heading">
+                    <h2 id="faq-title">Before you book.</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Where do sessions take place?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>In our studio, on location outdoors, or a mix of both — whatever suits the mood of your session.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What should I wear?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We send outfit guidance ahead of Signature and Premium sessions, and are happy to advise on Essential sessions too.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How long does a session take?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Between 45 minutes and 2 hours, depending on the package you choose.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>When will I receive my photos?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Within 7 days on average, sooner with Premium's priority delivery.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I request a specific location?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes — tell us where you have in mind when you book, and we'll help plan around it.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What happens after I submit a booking request?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We'll reach out within a day to confirm details, timing, and any questions before your session.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section" id="book" aria-labelledby="booking-title">
+            <div class="section-container booking-container">
+                <div class="booking-copy">
+                    <h2 id="booking-title">Ready to create something worth remembering?</h2>
+                    <p>Tell us what you're imagining. We'll take care of the rest.</p>
+                </div>
+                <form class="booking-form" id="bookingForm" novalidate>
+                    <div class="form-field" data-field="name">
+                        <label for="f-name">Name</label>
+                        <input type="text" id="f-name" name="name" placeholder="Your full name">
+                        <span class="form-error">Enter your name.</span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field" data-field="email">
+                            <label for="f-email">Email</label>
+                            <input type="email" id="f-email" name="email" placeholder="name@email.com">
+                            <span class="form-error">Enter a valid email.</span>
+                        </div>
+                        <div class="form-field" data-field="date">
+                            <label for="f-date">Preferred date</label>
+                            <input type="date" id="f-date" name="date">
+                            <span class="form-error">Choose a preferred date.</span>
+                        </div>
+                    </div>
+                    <div class="form-field" data-field="type">
+                        <label for="f-type">What are you looking for?</label>
+                        <select id="f-type" name="type">
+                            <option value="">Select a session type</option>
+                            <option value="portrait">Portrait</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="couples">Couples</option>
+                            <option value="branding">Personal branding</option>
+                        </select>
+                        <span class="form-error">Select a session type.</span>
+                    </div>
+                    <div class="form-field" data-field="details">
+                        <label for="f-details">Tell us about your session</label>
+                        <textarea id="f-details" name="details" placeholder="Location ideas, timing, the story behind it..."></textarea>
+                        <span class="form-error">Tell us a little about your session.</span>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Send inquiry</button>
+                    <div class="form-success" id="formSuccess">
+                        <h3>Thank you — we'll be in touch within 24 hours.</h3>
+                        <p>We've received your inquiry and can't wait to help plan your session.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Luma Studio</a>
+                    <p>Photography for moments that matter.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Explore</h5>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul><li>hello@lumastudio.com</li></ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Follow</h5>
+                    <ul><li>Instagram</li><li>Pinterest</li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Luma Studio</span>
+                <a href="#book" class="btn-secondary">Book a session</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="modalBackdrop">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-media"><img id="modalImg" src="" alt=""></div>
+            <div class="modal-body">
+                <button class="modal-close" id="modalClose" aria-label="Close project preview">✕</button>
+                <p class="modal-cat" id="modalCat"></p>
+                <h3 id="modalTitle"></h3>
+                <p class="modal-loc" id="modalLoc"></p>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-meta">
+                    <div><strong id="modalMetaType"></strong>Session type</div>
+                    <div><strong id="modalMetaStyle"></strong>Style</div>
+                </div>
+                <a href="#" id="modalLink" class="modal-link">View full session →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
